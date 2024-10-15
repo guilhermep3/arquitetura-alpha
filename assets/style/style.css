@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Roboto", serif;
+}
+:root{
+   --main-coloe: #AF883A;
+}
+header{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 1000;
+}
+.logo{
+   width: 50px;
+   height: 50px;
+}
+.logo img{
+   width: inherit;
+   height: inherit;
+}
+nav ul{
+   display: flex;
+   list-style: none;
+   gap: 40px;
+}
+nav ul li, .contactNav{
+   font-size: 15px;
+   text-transform: uppercase;
+   padding: 20px 0;
+   border-bottom: 2px solid transparent;
+}
+nav ul li a, .contactNav{
+   color: #000;
+   text-decoration: none;
+   transition: 0.3s;
+   text-shadow: 1px 1px 1px #333;
+}
+nav ul li a:hover, .contactNav:hover{
+   color: var(--main-coloe);
+}
+
+/* SLIDE */
+.sliderArea{
+   display: flex;
+   height: 100vh;
+   overflow: hidden;
+}
+.sliderImages{
+   display: flex;
+   height: 100%;
+   transition: all ease 0.5s;
+}
+.sliderImg{
+   width: 100vw;
+   height: inherit;
+   background-position: top;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.sliderControls{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: absolute;
+   z-index: 100;
+   width: 100%;
+   padding: 0 20px;
+}
+.sliderControl{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   border: 1px solid #000;
+   cursor: pointer;
+   transition: 0.2s;
+}
+.sliderControl i{
+   font-size: 22px;
+   font-weight: bold;
+}
+.sliderControl:hover{
+   color: var(--main-coloe);
+   border: 1px solid var(--main-coloe);
+}
+.sliderTitle{
+   display: flex;
+   align-items: center;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 40px;
+}
+.sliderTitle span{
+   color: var(--main-coloe);   
+}
+.sliderTitle img{
+   width: 50px;
+}
