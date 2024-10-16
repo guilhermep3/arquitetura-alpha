@@ -1,18 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 *{
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: "Comfortaa", sans-serif;
+   font-family: "Mulish", sans-serif;
    outline: none;
 }
 body{
    background-color: #f0f0f0;
 }
 :root{
-   --main-coloe: #C99D45;
+   --main-color: #C99D45;
 }
 /* CLASSES MULTI USADAS*/
+.active{
+   color: var(--main-color);
+}
 .container{
    display: flex;
    justify-content: center;
@@ -24,7 +27,8 @@ body{
 .sectionTitle{
    font-size: 30px;
    text-align: center;
-   margin: 30px 0;
+   margin-top: 30px;
+   margin-bottom: 20px;
 }
 .sectionTitle::after{
    content: '';
@@ -32,14 +36,14 @@ body{
    width: 150px;
    height: 2px;
    margin: 0 auto;
-   background-color: var(--main-coloe);
+   background-color: var(--main-color);
 }
 .btn{
    font-size: 17px;
    padding: 10px 12px;
    border-radius: 7px;
    border: 1px solid #000;
-   background-color: var(--main-coloe);
+   background-color: var(--main-color);
    box-shadow: 1px 1px 3px rgba(51, 51, 51, 0.5);
    cursor: pointer;
    transition: 0.2s;
@@ -47,6 +51,11 @@ body{
 .btn:hover{
    transform: scale(1.02);
 }
+.modelNone{
+   display: none;
+}
+
+
 
 header{
    display: flex;
@@ -88,7 +97,7 @@ nav ul li a, .contactNav{
    text-shadow: 1px 1px 1px rgba(51, 51, 51, 0.5);
 }
 nav ul li a:hover, .contactNav:hover{
-   color: var(--main-coloe);
+   color: var(--main-color);
 }
 
 /* SLIDE */
@@ -134,8 +143,8 @@ nav ul li a:hover, .contactNav:hover{
    font-weight: bold;
 }
 .sliderControl:hover{
-   color: var(--main-coloe);
-   border: 1px solid var(--main-coloe);
+   color: var(--main-color);
+   border: 1px solid var(--main-color);
 }
 .sliderTitle{
    display: flex;
@@ -148,7 +157,7 @@ nav ul li a:hover, .contactNav:hover{
    text-shadow: 0px 0px 3px #333;
 }
 .sliderTitle span{
-   color: var(--main-coloe);   
+   color: var(--main-color);   
 }
 .sliderTitle img{
    width: 45px;
@@ -188,23 +197,76 @@ nav ul li a:hover, .contactNav:hover{
    text-decoration: underline;
 }
 .aboutUs-right span{
-   color: var(--main-coloe);
+   color: var(--main-color);
 }
 
 .ourTeam{
    flex-direction: column;
 }
 .team{
-   display: flex;
-   gap: 30px;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 70px;
 }
 .team img{
    width: 200px;
    filter: drop-shadow(0px 0px 5px #555);
+   transition: 0.3s;
 }
-.namePerson{
+.team img:hover{
+   filter: drop-shadow(0px 0px 7px var(--main-color));
+}
+.personModel{
+   text-align: center;
+}
+.personName{
    font-size: 20px;
    text-align: center;
-   border-left: 1px solid var(--main-coloe);
-   border-right: 1px solid var(--main-coloe);
+   padding: 0 5px;
+   border-left: 1px solid var(--main-color);
+   border-right: 1px solid var(--main-color);
+}
+.personLoad{
+   color: #333;
+}
+
+
+.highlights{
+   background-color: #fff;
+}
+.highlightsArea{
+   flex-direction: column;
+}
+.highlightsDiv{
+   display: flex;
+   justify-content: center;
+   max-width: 1200px;
+   flex-wrap: wrap;
+}
+.highlight {
+   text-align: center;
+   background-color: #f0f0f0;
+   border-radius: 15px;
+   margin: 20px;
+   padding: 20px 10px;
+   transition: 0.5s;
+   cursor: pointer;
+   width: 300px;
+   border: 2px solid transparent;
+}
+.highlight:hover {
+   transform: scale(1.02);
+   border: 2px solid var(--main-color);
+}
+.highlight i {
+   font-size: 55px;
+   color: var(--main-color);
+}
+.highlight-info h3 {
+   font-size: 20px;
+   padding: 5px;
+}
+.highlight-info p {
+   font-size: 15px;
+   line-height: 20px;
 }
