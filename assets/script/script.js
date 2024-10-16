@@ -1,3 +1,7 @@
+const qs = (el)=>document.querySelector(el);
+const qsa = (el)=>document.querySelectorAll(el)
+
+// SLIDE
 let totalSlides = document.querySelectorAll('.sliderImg').length;
 let currentSlide = 0;
 
@@ -25,3 +29,18 @@ function updateMargin(){
 }
 
 setInterval(goNext, 5000)
+
+// SCROLL HEADER
+window.addEventListener('scroll', ()=>{
+   let header = document.querySelector('header')
+   header.classList.toggle('scrollHeader',window.scrollY > 200)
+})
+
+// TEAM.JS
+personsJson.map((item, index)=>{
+   let personDiv = qs('.person').cloneNode(true);
+
+   personDiv.setAttribute('data-key', index);
+   personDiv.querySelector('.personImg').src = item.img;
+   personDiv.querySelector('.namePerson').innerHTML = item.name;
+})
