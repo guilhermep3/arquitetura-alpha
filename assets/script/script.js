@@ -35,7 +35,7 @@ window.addEventListener('scroll', ()=>{
    header.classList.toggle('scrollHeader',window.scrollY > 200);
 })
 
-// TEAM.JS
+// PERSONS.JSON
 personsJson.map((item, index)=>{
    let personModel = qs('.personModel').cloneNode(true);
 
@@ -44,4 +44,17 @@ personsJson.map((item, index)=>{
    personModel.querySelector('.personName').innerHTML = item.name;
    personModel.querySelector('.personLoad').innerHTML = item.load;
    qs('.team').append(personModel);
+})
+
+// PROJECTS.JSON
+projectsHomeJson.map((item, index)=>{
+   let projectModel = qs('.project').cloneNode(true);
+
+   projectModel.setAttribute('data-key', index);
+   projectModel.querySelector('h3').innerHTML = item.name;
+   projectModel.querySelector('img').src = item.img;
+   projectModel.querySelector('.projectLocal').innerHTML = item.local;
+   projectModel.querySelector('.projectYear').innerHTML = item.year;
+   projectModel.querySelector('.projectSize').innerHTML = item.size;
+   qs('.projects').append(projectModel)
 })
