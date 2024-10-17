@@ -59,3 +59,16 @@ projectsHomeJson.map((item, index)=>{
    projectModel.querySelector('.projectSize').innerHTML = item.size;
    qs('.projects').append(projectModel);
 });
+
+// ECONOMIZE
+const m2 = qs('#m2');
+const calculate = qs('#calculate');
+const resultCalc = qs('#resultCalc');
+calculate.addEventListener('click', ()=>{
+   let valorM2 = m2.value * 5000;
+   let valorM2disc = valorM2 * 0.90
+   let valorM2fix = valorM2.toLocaleString('pt-BR');
+   let valorM2discfix = valorM2disc.toLocaleString('pt-BR')
+
+   resultCalc.innerHTML = `Com nosso 10% de desconto custaria em torno de <span>R$${valorM2discfix}</span> reais.<br/>sem nosso desconto seria <span>R$${valorM2fix}</span> reais.`;
+})

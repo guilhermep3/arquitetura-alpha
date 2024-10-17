@@ -9,6 +9,16 @@
 :root{
    --main-color: #C99D45;
 }
+::-webkit-scrollbar{
+   display: block;
+   width: 10px;
+}
+::-webkit-scrollbar-thumb{
+   background-color: #C99D45;
+}
+::-webkit-scrollbar-track{
+   background-color: #fff;
+}
 /* CLASSES MULTI USADAS*/
 .active{
    color: var(--main-color);
@@ -25,8 +35,7 @@
 .sectionTitle{
    font-size: 30px;
    text-align: center;
-   margin-top: 30px;
-   margin-bottom: 20px;
+   margin: 30px;
 }
 .sectionTitle::after{
    content: '';
@@ -52,6 +61,17 @@
 }
 .modelNone{
    display: none;
+}
+.linkHome{
+   font-weight: bold;
+   color: #000;
+   text-decoration: none;
+}
+.linkHome:hover{
+   text-decoration: underline;
+}
+.linkHome span{
+   color: var(--main-color);
 }
 
 
@@ -189,17 +209,6 @@ nav ul li a:hover, .contactNav:hover{
    font-size: 18px;
    line-height: 27px;
    margin-bottom: 20px;
-}
-.aboutUs-right a{
-   font-weight: bold;
-   color: #000;
-   text-decoration: none;
-}
-.aboutUs-right a:hover{
-   text-decoration: underline;
-}
-.aboutUs-right span{
-   color: var(--main-color);
 }
 
 .ourTeam{
@@ -343,4 +352,66 @@ nav ul li a:hover, .contactNav:hover{
 }
 .yearSizeDiv button{
    margin-top: 10px;
+}
+
+
+.economizeDivision{
+   display: flex;
+}
+.economizeLeft{
+   flex: 1;
+}
+.economizeLeft img{
+   width: 100%;
+   box-shadow: 10px 10px 20px #d5d5d5;
+   transition: 0.2s;
+}
+.economizeLeft img:hover{
+   transform: scale(1.03);
+}
+.economizeRight{
+   flex: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 20px;
+}
+.economizeRight p{
+   font-size: 18px;
+   text-align: center;
+   line-height: 23px;
+}
+.calcArea{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 10px 0;
+}
+.calcArea label{
+   font-size: 20px;
+}
+.calcArea input{
+   width: 150px;
+   font-size: 17px;
+   text-align: center;
+   padding: 2px;
+   border-radius: 7px;
+   margin: 0 5px;
+}
+#resultCalc{
+   width: 400px;
+   height: 150px;
+   font-size: 18px;
+   text-align: center;
+   line-height: 25px;
+   padding: 10px 5px;
+   border: 1px solid #000;
+   box-shadow: 10px 10px 20px #d5d5d5;
+}
+#resultCalc span{
+   font-weight: 500;
+}
+#resultCalc span:first-child{
+   font-size: 19px;
 }
