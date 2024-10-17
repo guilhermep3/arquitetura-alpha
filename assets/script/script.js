@@ -71,4 +71,76 @@ calculate.addEventListener('click', ()=>{
    let valorM2discfix = valorM2disc.toLocaleString('pt-BR')
 
    resultCalc.innerHTML = `Com nosso 10% de desconto custaria em torno de <span>R$${valorM2discfix}</span> reais.<br/>sem nosso desconto seria <span>R$${valorM2fix}</span> reais.`;
+   m2.value = '';
+})
+
+
+window.sr = ScrollReveal({reset:true})
+sr.reveal('.scrollTop',{
+   duration: '1000',
+   distance: '100px',
+   origin: 'top'
+})
+sr.reveal('.scrollBottom',{
+   duration: '1000',
+   distance: '100px',
+   origin: 'bottom'
+})
+sr.reveal('.scrollLeft',{
+   duration: '1000',
+   distance: '100px',
+   origin: 'left'
+})
+sr.reveal('.scrollRight',{
+   duration: '1000',
+   distance: '100px',
+   origin: 'right'
+})
+sr.reveal('.scrollD100',{
+   duration: '1000',
+   distance: '100px',
+   origin: 'top',
+   delay: '100'
+})
+sr.reveal('.scrollD200',{
+   duration: '1000',
+   distance: '100px',
+   origin: 'top',
+   delay: '200'
+})
+sr.reveal('.scrollD300',{
+   duration: '1000',
+   distance: '100px',
+   origin: 'top',
+   delay: '300'
+})
+sr.reveal('.bi-facebook',{
+   duration: 1000,
+   distance: '90px',
+   origin: 'top',
+   delay: 100
+})
+sr.reveal('.bi-instagram',{
+   duration: 1000,
+   distance: '90px',
+   origin: 'top',
+   delay: 200
+})
+sr.reveal('.bi-youtube',{
+   duration: 1000,
+   distance: '90px',
+   origin: 'top',
+   delay: 300
+})
+sr.reveal('.bi-pinterest',{
+   duration: 1000,
+   distance: '90px',
+   origin: 'bottom',
+   delay: 400
+})
+sr.reveal('.bi-linkedin',{
+   duration: 1000,
+   distance: '90px',
+   origin: 'bottom',
+   delay: 500
 })
