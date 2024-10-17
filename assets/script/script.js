@@ -1,3 +1,8 @@
+// SCROLL HEADER
+window.addEventListener('scroll', ()=>{
+   let header = document.querySelector('header');
+   header.classList.toggle('scrollHeader',window.scrollY > 200);
+});
 const qs = (el)=>document.querySelector(el);
 const qsa = (el)=>document.querySelectorAll(el);
 
@@ -14,14 +19,14 @@ function goPrev(){
       currentSlide = totalSlides - 1;
    }
    updateMargin();
-}
+};
 function goNext(){
    currentSlide++;
    if(currentSlide > (totalSlides - 1)){
       currentSlide = 0;
    }
    updateMargin();
-}
+};
 function updateMargin(){
    let sliderImgWidth = document.querySelector('.sliderImg').clientWidth;
    let newMargin = (currentSlide * sliderImgWidth);
@@ -29,11 +34,7 @@ function updateMargin(){
 }
 setInterval(goNext, 5000);
 
-// SCROLL HEADER
-window.addEventListener('scroll', ()=>{
-   let header = document.querySelector('header');
-   header.classList.toggle('scrollHeader',window.scrollY > 200);
-})
+
 
 // PERSONS.JSON
 personsJson.map((item, index)=>{
@@ -44,7 +45,7 @@ personsJson.map((item, index)=>{
    personModel.querySelector('.personName').innerHTML = item.name;
    personModel.querySelector('.personLoad').innerHTML = item.load;
    qs('.team').append(personModel);
-})
+});
 
 // PROJECTS.JSON
 projectsHomeJson.map((item, index)=>{
@@ -56,5 +57,5 @@ projectsHomeJson.map((item, index)=>{
    projectModel.querySelector('.projectLocal').innerHTML = item.local;
    projectModel.querySelector('.projectYear').innerHTML = item.year;
    projectModel.querySelector('.projectSize').innerHTML = item.size;
-   qs('.projects').append(projectModel)
-})
+   qs('.projects').append(projectModel);
+});
