@@ -137,6 +137,36 @@ nav ul li a, .contactNav{
 nav ul li a:hover, .contactNav:hover{
    color: var(--main-color);
 }
+.mobileHeader, .navMobile{
+   display: none;
+}
+.navMobile{
+   display: flex;
+   flex-direction: column;
+   padding: 20px;
+   position: absolute;
+   top: -70vh;
+   right: 0;
+   background-color: #fff;
+   box-shadow: -5px 5px 10px #d5d5d5;
+   list-style: none;
+}
+.navMobile li{
+   margin-bottom: 30px;
+}
+.navMobile a{
+   font-size: 20px;
+   font-weight: 600;
+   text-transform: uppercase;
+   text-decoration: none;
+   color: #000;
+   padding: 10px 5px;
+   margin-bottom: 10px;
+}
+.showNavMobile{
+   top: 53px;
+}
+
 
 /* SLIDE */
 .sliderArea{
