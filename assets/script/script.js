@@ -144,3 +144,8 @@ sr.reveal('.bi-linkedin',{
    origin: 'bottom',
    delay: 500
 })
+
+
+qs('.mobileHeader').addEventListener('click', ()=>{
+   qs('.navMobile').classList.toggle('showNavMobile')
+})

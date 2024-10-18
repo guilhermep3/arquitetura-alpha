@@ -1,0 +1,17 @@
+@media screen and (max-width: 500px) {
+   header{
+      justify-content: space-between;
+      padding: 3px 30px;
+      background-color: #fff;
+   }
+   nav, .contactNav{
+      display: none;
+   }
+   .mobileHeader, .navMobile{
+      display: flex;
+   }
+   .bi-list{
+      font-size: 40px;
+      color: #C99D45;
+   }
+}
