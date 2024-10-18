@@ -1,4 +1,10 @@
 @media screen and (max-width: 500px) {
+   .container{
+      padding: 20px 15px;
+   }
+   .sectionTitle{
+      font-size: 25px;
+   }
    header{
       justify-content: space-between;
       padding: 3px 30px;
@@ -13,5 +19,57 @@
    .bi-list{
       font-size: 40px;
       color: #C99D45;
+   }
+   .sliderTitle{
+      font-size: 25px;
+      text-align: center;
+   }
+   .sliderTitle img{
+      width: 30px;
+   }
+   .aboutUs-area{
+      flex-direction: column-reverse;
+   }
+   .aboutUs-left img {
+      width: 200px;
+      margin-top: 15px;
+   }
+   .aboutUs-right p{
+      line-height: 21px;
+   }
+   .team{
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+   }
+   .team img{
+      width: 150px;
+   }
+   .titleArea h3{
+      font-size: 15px;
+      text-align: center;
+   }
+   .projects{
+      gap: 10px;
+      margin: 0;
+   }
+   .project img{
+      width: 163px;
+   }
+   .project h3{
+      font-size: 14px;
+   }
+   .projectInfo{
+      font-weight: 500;
+      padding: 0px 5px;
+      font-size: 12px;
+      background: linear-gradient(transparent, rgba(213, 213, 213, 0.8) 30%);
+   }
+   .projectLocal{
+      margin: 0;
+   }
+   .yearSizeDiv button{
+      margin-top: 5px;
+      font-size: 16px;
+      padding: 8px 10px;
    }
 }
