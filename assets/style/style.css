@@ -109,6 +109,9 @@ header{
 .scrollHeader{
    background-color: rgba(255, 255, 255, 0.7);
 }
+.hideHeader{
+   display: none;
+}
 .logo{
    width: 50px;
    height: 50px;
@@ -579,6 +582,7 @@ footer a{
    justify-content: center;
    align-items: center;
    background-color: rgba(0, 0, 0, 0.5);
+   transition: all 0.3s;
 }
 .showModal{
    display: flex;
@@ -591,7 +595,7 @@ footer a{
    gap: 20px;
    padding: 20px;
    border-radius: 20px;
-   border: 1px solid #000000;
+   border: 2px solid var(--main-color);
    background-color: #fff;
 }
 .modalTop{
@@ -624,7 +628,7 @@ footer a{
    flex-direction: column;
    gap: 20px;
    padding: 20px;
-   width: 350px;
+   width: 370px;
 }
 .modalTitle{
    font-size: 30px;

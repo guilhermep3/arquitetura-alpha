@@ -8,14 +8,14 @@ let personsJson = [
 ]
 
 let projectsHomeJson = [
-   {id:1, name:'Arrayanes House', img:'assets/images/projects/arrayanes-house.jpg', local:'Equador - Puembo', year:'2021', size:'1240m²'},
-   {id:2, name:'Brio House', img:'assets/images/projects/brio-house.jpg', local:'Brasil - Rio de Janeiro', year:'2023', size:'900m²'},
-   {id:3, name:'Dual House', img:'assets/images/projects/dual-house.jpg', local:'Argentina - Buenos Aires', year:'2023', size:'710m²'},
-   {id:4, name:'Eclipse House', img:'assets/images/projects/eclipse-house.jpg', local:'Equador - Cumbaya', year:'2023', size:'1300m²'},
-   {id:5, name:'Fusion House', img:'assets/images/projects/fusion-house.jpg', local:'Brasil - Rio de Janeiro', year:'2024', size:'1500m²'},
-   {id:6, name:'Emperadora House', img:'assets/images/projects/emperadora-house.jpg', local:'Brasil - São Paulo', year:'2022', size:'855m²'},
-   {id:7, name:'Orizzonte House', img:'assets/images/projects/orizzonte-house.jpg', local:'Brasil - Rio de Janeiro', year:'2022', size:'1000m²'},
-   {id:8, name:'Zenith House', img:'assets/images/projects/zenith-house.jpg', local:'Brasil - São Paulo', year:'2022', size:'1000m²'}
+   {id:1, name:'Arrayanes House', type:'Arquitetura Moderna', img:'assets/images/projects/arrayanes-house.jpg', local:'Equador - Puembo', year:'2021', size:'1240m²', colors: ['#FFFAF0','#d1e5f5']},
+   {id:2, name:'Brio House', type:'Arquitetura Moderna', img:'assets/images/projects/brio-house.jpg', local:'Brasil - Rio de Janeiro', year:'2023', size:'900m²'},
+   {id:3, name:'Dual House', type:'Arquitetura Minimalista', img:'assets/images/projects/dual-house.jpg', local:'Argentina - Buenos Aires', year:'2023', size:'710m²'},
+   {id:4, name:'Eclipse House', type:'Arquitetura Moderna', img:'assets/images/projects/eclipse-house.jpg', local:'Equador - Cumbaya', year:'2023', size:'1300m²'},
+   {id:5, name:'Fusion House', type:'Arquitetura Tropical', img:'assets/images/projects/fusion-house.jpg', local:'Brasil - Rio de Janeiro', year:'2024', size:'1500m²'},
+   {id:6, name:'Emperadora House', type:'Arquitetura Contemporânea', img:'assets/images/projects/emperadora-house.jpg', local:'Brasil - São Paulo', year:'2022', size:'855m²'},
+   {id:7, name:'Orizzonte House', type:'Arquitetura Minimalista', img:'assets/images/projects/orizzonte-house.jpg', local:'Brasil - Rio de Janeiro', year:'2022', size:'1000m²'},
+   {id:8, name:'Zenith House', type:'Arquitetura Moderna', img:'assets/images/projects/zenith-house.jpg', local:'Brasil - São Paulo', year:'2022', size:'1000m²'}
 ]
 
 let projectsJson = [

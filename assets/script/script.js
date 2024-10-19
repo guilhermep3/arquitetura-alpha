@@ -58,7 +58,31 @@ projectsHomeJson.map((item, index)=>{
    projectModel.querySelector('.projectYear').innerHTML = item.year;
    projectModel.querySelector('.projectSize').innerHTML = item.size;
    qs('.projects').append(projectModel);
+
 });
+qsa('#btnShowModal').forEach(btn => {
+   btn.addEventListener('click', (e)=>{
+      let key = e.target.closest('.project').getAttribute('data-key');
+      qs('.modalLeft img').src = projectsHomeJson[key].img;
+      qs('.modalTitle').innerHTML = projectsHomeJson[key].name;
+      qs('.modalType').innerHTML = projectsHomeJson[key].type;
+      qs('.modalLocal').innerHTML = `<i class="bi bi-geo-alt"></i><span>LOCAL:</span> ${projectsHomeJson[key].local}`;
+      qs('.modalYear').innerHTML = `<i class="bi bi-geo-alt"></i><span>ANO:</span> ${projectsHomeJson[key].year}`;
+      qs('.modalSize').innerHTML = `<i class="bi bi-geo-alt"></i><span>TAMANHO:</span> ${projectsHomeJson[key].size}`;
+      console.log(projectsHomeJson[key])
+
+      qs('.modalArea').classList.add('showModal');
+      qs('.modalArea').style.opacity = '0';
+      setTimeout(() => {
+         qs('.modalArea').style.opacity = '1';
+      }, 10);
+      qs('header').classList.add('hideHeader');
+   });
+});
+qs('.closeModal').addEventListener('click', ()=>{
+   qs('.modalArea').classList.remove('showModal');
+   qs('header').classList.remove('hideHeader');
+})
 
 // ECONOMIZE
 const m2 = qs('#m2');
@@ -147,16 +171,4 @@ sr.reveal('.bi-linkedin',{
 
 qs('.mobileHeader').addEventListener('click', ()=>{
    qs('.navMobile').classList.toggle('showNavMobile')
-})
-
-// MODAL
-
-function showModalEvt(){
-   qs('.modalArea').classList.add('showModal')
-}
-qsa('#btnShowModal').forEach(btn => {
-   btn.addEventListener('click', showModalEvt);
-});
-qs('.closeModal').addEventListener('click', ()=>{
-   qs('.modalArea').classList.remove('showModal')
 })
