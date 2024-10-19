@@ -148,3 +148,15 @@ sr.reveal('.bi-linkedin',{
 qs('.mobileHeader').addEventListener('click', ()=>{
    qs('.navMobile').classList.toggle('showNavMobile')
 })
+
+// MODAL
+
+function showModalEvt(){
+   qs('.modalArea').classList.add('showModal')
+}
+qsa('#btnShowModal').forEach(btn => {
+   btn.addEventListener('click', showModalEvt);
+});
+qs('.closeModal').addEventListener('click', ()=>{
+   qs('.modalArea').classList.remove('showModal')
+})

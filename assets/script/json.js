@@ -8,14 +8,14 @@ let personsJson = [
 ]
 
 let projectsHomeJson = [
-   {id:1, name:'Agnes House', img:'assets/images/projects/agnes-house.jpg', local:'Brasil - São Paulo', year:'2022', size:'2000m²'},
-   {id:2, name:'Arrayanes House', img:'assets/images/projects/arrayanes-house.jpg', local:'Equador - Puembo', year:'2021', size:'1240m²'},
-   {id:3, name:'Brio House', img:'assets/images/projects/brio-house.jpg', local:'Brasil - Rio de Janeiro', year:'2023', size:'900m²'},
-   {id:4, name:'Cliff House', img:'assets/images/projects/cliff-house.jpg', local:'Colombia - Bogotá', year:'2021', size:'364m²'},
-   {id:5, name:'Dual House', img:'assets/images/projects/dual-house.jpg', local:'Argentina - Buenos Aires', year:'2023', size:'710m²'},
-   {id:6, name:'Eclipse House', img:'assets/images/projects/eclipse-house.jpg', local:'Equador - Cumbaya', year:'2023', size:'1300m²'},
-   {id:7, name:'El-Cisne House', img:'assets/images/projects/elcisne-house.jpg', local:'Argentina - Buenos Aires', year:'2023', size:'1043m²'},
-   {id:8, name:'Emperadora House', img:'assets/images/projects/emperadora-house.jpg', local:'Brasil - São Paulo', year:'2022', size:'855m²'}
+   {id:1, name:'Arrayanes House', img:'assets/images/projects/arrayanes-house.jpg', local:'Equador - Puembo', year:'2021', size:'1240m²'},
+   {id:2, name:'Brio House', img:'assets/images/projects/brio-house.jpg', local:'Brasil - Rio de Janeiro', year:'2023', size:'900m²'},
+   {id:3, name:'Dual House', img:'assets/images/projects/dual-house.jpg', local:'Argentina - Buenos Aires', year:'2023', size:'710m²'},
+   {id:4, name:'Eclipse House', img:'assets/images/projects/eclipse-house.jpg', local:'Equador - Cumbaya', year:'2023', size:'1300m²'},
+   {id:5, name:'Fusion House', img:'assets/images/projects/fusion-house.jpg', local:'Brasil - Rio de Janeiro', year:'2024', size:'1500m²'},
+   {id:6, name:'Emperadora House', img:'assets/images/projects/emperadora-house.jpg', local:'Brasil - São Paulo', year:'2022', size:'855m²'},
+   {id:7, name:'Orizzonte House', img:'assets/images/projects/orizzonte-house.jpg', local:'Brasil - Rio de Janeiro', year:'2022', size:'1000m²'},
+   {id:8, name:'Zenith House', img:'assets/images/projects/zenith-house.jpg', local:'Brasil - São Paulo', year:'2022', size:'1000m²'}
 ]
 
 let projectsJson = [

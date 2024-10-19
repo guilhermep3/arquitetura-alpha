@@ -568,3 +568,108 @@ footer a{
    font-size: 15px;
    color: #fff;
 }
+
+.modalArea{
+   position:fixed;
+   left:0;
+   top:0;
+   bottom:0;
+   right:0;
+   display: none;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(0, 0, 0, 0.5);
+}
+.showModal{
+   display: flex;
+}
+.modal{
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   flex-direction: column;
+   gap: 20px;
+   padding: 20px;
+   border-radius: 20px;
+   border: 1px solid #000000;
+   background-color: #fff;
+}
+.modalTop{
+   display: flex;
+}
+.modalLeft img{
+   width: 400px;
+}
+.modal-ImgList{
+   display: flex;
+   align-items: center;
+   gap: 5px;
+}
+.modal-ImgList i{
+   font-size: 22px;
+   padding: 5px;
+   cursor: pointer;
+}
+.modal-ImgList img{
+   width: 95px;
+   transition: 0.2s;
+   cursor: pointer;
+}
+.modal-ImgList img:hover{
+   transform: scale(1.05);
+}
+.modalRight{
+   display: flex;
+   align-items: flex-start;
+   flex-direction: column;
+   gap: 20px;
+   padding: 20px;
+   width: 350px;
+}
+.modalTitle{
+   font-size: 30px;
+   font-weight: 600;
+   text-transform: uppercase;
+}
+.modalType{
+   font-size: 20px;
+   margin-top: 7px;
+}
+.modalInfo span{
+   font-size: 17px;
+   color: #222;
+   margin-right: 5px;
+}
+.modalInfo p{
+   margin-bottom: 10px;
+   font-size: 17px;
+}
+.modalInfo i{
+   font-size: 20px;
+   margin-right: 5px;
+}
+.modalColors{
+   display: flex;
+   gap: 10px;
+}
+.modalColors span{
+   display: block;
+   width: 30px;
+   height: 30px;
+   margin-top: 10px;
+   border-radius: 50%;
+   border: 1px solid #555;
+   transition: 0.2s;
+}
+.modalColors span:hover{
+   border: 1px solid #000;
+}
+.closeModal{
+   padding: 7px 10px;
+   border-radius: 10px;
+   border: 1px solid #ccc;
+   background-color: #e3e3e3;
+}
+.closeModal:hover{
+   border: 1px solid #777;
+}
