@@ -1,4 +1,4 @@
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
    .container{
       padding: 20px 15px;
    }
@@ -61,8 +61,10 @@
    .projectInfo{
       font-weight: 500;
       padding: 0px 5px;
-      font-size: 12px;
       background: linear-gradient(transparent, rgba(213, 213, 213, 0.8) 30%);
+   }
+   .projectLocal, .projectYear, .projectSize{
+      font-size: 14px;
    }
    .projectLocal{
       margin: 0;

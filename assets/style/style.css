@@ -148,7 +148,8 @@ nav ul li a:hover, .contactNav:hover{
    top: -70vh;
    right: 0;
    background-color: #fff;
-   box-shadow: -5px 5px 10px #d5d5d5;
+   border-left: 1px solid #555;
+   border-bottom: 1px solid #555;
    list-style: none;
 }
 .navMobile li{
