@@ -67,10 +67,10 @@ qsa('#btnShowModal').forEach(btn => {
       qs('.modalTitle').innerHTML = projectsHomeJson[key].name;
       qs('.modalType').innerHTML = projectsHomeJson[key].type;
       qs('.modalLocal').innerHTML = `<i class="bi bi-geo-alt"></i><span>LOCAL:</span> ${projectsHomeJson[key].local}`;
-      qs('.modalYear').innerHTML = `<i class="bi bi-geo-alt"></i><span>ANO:</span> ${projectsHomeJson[key].year}`;
-      qs('.modalSize').innerHTML = `<i class="bi bi-geo-alt"></i><span>TAMANHO:</span> ${projectsHomeJson[key].size}`;
-      renderColors(projectsHomeJson[key])
-      console.log(projectsHomeJson[key])
+      qs('.modalYear').innerHTML = `<i class="bi bi-calendar-check"></i><span>ANO:</span> ${projectsHomeJson[key].year}`;
+      qs('.modalSize').innerHTML = `<i class="bi bi-bounding-box"></i><span>TAMANHO:</span> ${projectsHomeJson[key].size}`;
+      renderColors(projectsHomeJson[key]);
+      renderImages(projectsHomeJson[key]);
 
       qs('.modalArea').classList.add('showModal');
       qs('.modalArea').style.opacity = '0';
@@ -84,7 +84,7 @@ qs('.closeModal').addEventListener('click', ()=>{
    qs('.modalArea').classList.remove('showModal');
    qs('header').classList.remove('hideHeader');
 })
-function renderColors(project) {
+function renderColors(project){
    let modalColors = qs('.modalColors');
    modalColors.innerHTML = ''; // Limpa qualquer conteúdo anterior
 
@@ -94,13 +94,29 @@ function renderColors(project) {
        modalColors.appendChild(colorSpan); // Adiciona o span ao contêiner
    });
 }
+function renderImages(project){
+   let modalSlide = qs('.modal-slide');
+   modalSlide.innerHTML = '';
+
+   project.images.forEach(image => {
+      let imgEl = document.createElement('img');
+      imgEl.src = image;
+      modalSlide.append(imgEl);
+      imgEl.addEventListener('click', (imgClicked)=>{
+         let mainImg = document.querySelector('.mainImg');
+         let mainImgSrc = document.querySelector('.mainImg').src;
+         mainImg.src = imgClicked.target.src;
+         imgClicked.target.src = mainImgSrc;
+      });
+   });
+}
 
 // ECONOMIZE
 const m2 = qs('#m2');
 const calculate = qs('#calculate');
 const resultCalc = qs('#resultCalc');
 calculate.addEventListener('click', ()=>{
-   let valorM2 = m2.value * 7000;
+   let valorM2 = m2.value * 8000;
    let valorM2disc = valorM2 * 0.90
    let valorM2fix = valorM2.toLocaleString('pt-BR');
    let valorM2discfix = valorM2disc.toLocaleString('pt-BR')

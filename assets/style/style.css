@@ -144,7 +144,7 @@ nav ul li a:hover, .contactNav:hover{
    display: none;
 }
 .navMobile{
-   display: flex;
+   display: none;
    flex-direction: column;
    padding: 20px;
    position: absolute;
@@ -445,7 +445,7 @@ nav ul li a:hover, .contactNav:hover{
    font-size: 20px;
 }
 .calcArea input{
-   width: 150px;
+   width: 140px;
    font-size: 17px;
    text-align: center;
    padding: 2px;
@@ -604,22 +604,22 @@ footer a{
 .modalLeft img{
    width: 400px;
 }
-.modal-ImgList{
+.modal-imgList, .modal-slide{
    display: flex;
    align-items: center;
    gap: 5px;
 }
-.modal-ImgList i{
+.modal-imgList i{
    font-size: 22px;
    padding: 5px;
    cursor: pointer;
 }
-.modal-ImgList img{
+.modal-slide img{
    width: 95px;
    transition: 0.2s;
    cursor: pointer;
 }
-.modal-ImgList img:hover{
+.modal-slide img:hover{
    transform: scale(1.05);
 }
 .modalRight{
