@@ -69,6 +69,7 @@ qsa('#btnShowModal').forEach(btn => {
       qs('.modalLocal').innerHTML = `<i class="bi bi-geo-alt"></i><span>LOCAL:</span> ${projectsHomeJson[key].local}`;
       qs('.modalYear').innerHTML = `<i class="bi bi-geo-alt"></i><span>ANO:</span> ${projectsHomeJson[key].year}`;
       qs('.modalSize').innerHTML = `<i class="bi bi-geo-alt"></i><span>TAMANHO:</span> ${projectsHomeJson[key].size}`;
+      renderColors(projectsHomeJson[key])
       console.log(projectsHomeJson[key])
 
       qs('.modalArea').classList.add('showModal');
@@ -83,6 +84,16 @@ qs('.closeModal').addEventListener('click', ()=>{
    qs('.modalArea').classList.remove('showModal');
    qs('header').classList.remove('hideHeader');
 })
+function renderColors(project) {
+   let modalColors = qs('.modalColors');
+   modalColors.innerHTML = ''; // Limpa qualquer conteúdo anterior
+
+   project.colors.forEach(color => {
+       let colorSpan = document.createElement('span'); // Cria um novo span para cada cor
+       colorSpan.style.backgroundColor = color; // Define a cor de fundo do span
+       modalColors.appendChild(colorSpan); // Adiciona o span ao contêiner
+   });
+}
 
 // ECONOMIZE
 const m2 = qs('#m2');
