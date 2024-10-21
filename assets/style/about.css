@@ -1,0 +1,25 @@
+.banner{
+   background-image: url(../images/about/about-us-hero.jpg);
+   background-position: top;
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+}
+.banner span{
+   color: var(--main-color);
+   font-size: 40px;
+}
+.banner h1{
+   font-size: 40px;
+   margin-top: -150px;
+}
+.banner h2{
+   font-size: 30px;
+   text-shadow: 1px 1px 5px #777;
+}
