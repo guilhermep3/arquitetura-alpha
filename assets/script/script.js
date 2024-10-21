@@ -86,12 +86,12 @@ qs('.closeModal').addEventListener('click', ()=>{
 })
 function renderColors(project){
    let modalColors = qs('.modalColors');
-   modalColors.innerHTML = ''; // Limpa qualquer conteúdo anterior
+   modalColors.innerHTML = '';
 
    project.colors.forEach(color => {
-       let colorSpan = document.createElement('span'); // Cria um novo span para cada cor
-       colorSpan.style.backgroundColor = color; // Define a cor de fundo do span
-       modalColors.appendChild(colorSpan); // Adiciona o span ao contêiner
+       let colorSpan = document.createElement('span');
+       colorSpan.style.backgroundColor = color;
+       modalColors.appendChild(colorSpan);
    });
 }
 function renderImages(project){
@@ -107,6 +107,8 @@ function renderImages(project){
          let mainImgSrc = document.querySelector('.mainImg').src;
          mainImg.src = imgClicked.target.src;
          imgClicked.target.src = mainImgSrc;
+         mainImg.style.setProperty('--main-image-url', `url(${imgClicked.target.src})`);
+         console.log(mainImg)
       });
    });
 }
@@ -183,13 +185,13 @@ sr.reveal('.bi-youtube',{
    origin: 'top',
    delay: 300
 })
-sr.reveal('.bi-pinterest',{
+sr.reveal('.bi-linkedin',{
    duration: 1000,
    distance: '90px',
    origin: 'bottom',
    delay: 400
 })
-sr.reveal('.bi-linkedin',{
+sr.reveal('.bi-github',{
    duration: 1000,
    distance: '90px',
    origin: 'bottom',

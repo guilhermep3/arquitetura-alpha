@@ -551,6 +551,9 @@ nav ul li a:hover, .contactNav:hover{
 .btnContact:hover{
    animation: btn-animation 1s ease;
 }
+.contactRight a{
+   color: #000;
+}
 .contactRight i{
    font-size: 25px;
    margin: 0 5px;
@@ -567,8 +570,11 @@ footer{
    color: #fff;
    background-color: #333;
 }
+footer p:first-child{
+   padding-bottom: 5px;
+}
 footer a{
-   font-size: 15px;
+   font-size: 16px;
    color: #fff;
 }
 
@@ -601,8 +607,14 @@ footer a{
 .modalTop{
    display: flex;
 }
-.modalLeft img{
+.modalLeft{
    width: 400px;
+   height: 400px;
+}
+.modalLeft img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
 }
 .modal-imgList, .modal-slide{
    display: flex;

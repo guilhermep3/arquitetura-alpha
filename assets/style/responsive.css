@@ -133,7 +133,7 @@
       flex-direction: column;
    }
    .modal{
-      max-width: 90vw;
+      max-width: 98vw;
       flex-wrap: wrap;
    }
    .modalTop{
@@ -142,7 +142,8 @@
       align-items: center;
    }
    .modalLeft img{
-      width: 200px;
+      width: 100%;
+      max-width: 270px;
    }
    .modalRight{
       gap: 5px;
@@ -164,11 +165,10 @@
       height: 25px;
    }
    .modal-slide{
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      display: flex;
    }
    .modal-slide img{
-      width: 60px;
+      width: 50px;
    }
    .closeModal{
       padding: 5px 7px;
