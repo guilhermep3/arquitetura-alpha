@@ -170,3 +170,17 @@ nav ul li a:hover, .contactNav:hover{
 .showNavMobile{
    top: 53px;
 }
+
+footer{
+   padding: 30px;
+   text-align: center;
+   color: #fff;
+   background-color: #333;
+}
+footer p:first-child{
+   padding-bottom: 5px;
+}
+footer a{
+   font-size: 16px;
+   color: #fff;
+}
