@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,9 +18,8 @@
       <a href="index.html" class="logo"><img src="../assets/images/logo.png" alt="logo da empresa"></a>
       <nav>
          <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
             <li><a href="pages/about.html" class="active">Sobre</a></li>
-            <li><a href="pages/projects.html">Portifolio</a></li>
             <li><a href="pages/locals.html">Locais</a></li>
          </ul>
       </nav>
@@ -28,18 +28,90 @@
       <div class="navMobile">
          <li><a href="index.html" class="active">Home</a></li>
          <li><a href="pages/about.html">Sobre</a></li>
-         <li><a href="pages/projects.html">Portifolio</a></li>
          <li><a href="pages/locals.html">Locais</a></li>
          <li><a href="pages/contact.html">CONTATO</a></li>
       </div>
    </header>
    <section class="banner">
       <h1>QUEM <span>NÓS</span> SOMOS?</h1>
-      <h2><span><</span>Conheça mais sobre uma das maiores empresas de<br/> arquitetura da América Latina<span>></h2>
+      <h2><span><</span>Conheça mais sobre uma das maiores empresas de<br/> arquitetura da América Latina<span>></span>
+      </h2>
    </section>
-   <section class="begin">
-      <h1 class="sectionTitle">INÍCIO</h1>
+   <section class="creator">
+      <h1 class="sectionTitle">CRIADOR</h1>
+      <div class="creatorArea">
+         <div class="creatorLeft">
+            <p class="creatorName">Santiago Ortega</p>
+            <p>CEO - Arquitetura Alpha</p>
+         </div>
+         <div class="creatorCenter">
+            <img src="../assets/images/about/creator.png" alt="">
+         </div>
+         <div class="creatorRight">
+            <div class="creatorSkills">
+               <i class="bi bi-globe"></i>
+               <p>Reconhecido Mundialmente</p>
+            </div>
+            <div class="creatorSkills">
+               <i class="bi bi-mortarboard-fill"></i>
+               <p>Arquitetura em Harvard</p>
+            </div>
+            <div class="creatorSkills">
+               <i class="bi bi-trophy-fill"></i>
+               <p>+ de 40 Premiações</p>
+            </div>
+            <div class="creatorSkills">
+               <i class="bi bi-stars"></i>
+               <p>+ de 30 Anos de experiência</p>
+            </div>
+            <div class="creatorSkills">
+               <i class="bi bi-eye-fill"></i>
+               <p>Visão Futurista</p>
+            </div>
+            <div class="creatorMedia">
+               <i class="bi bi-instagram"></i>
+               <i class="bi bi-facebook"></i>
+               <i class="bi bi-youtube"></i>
+            </div>
+         </div>
+      </div>
    </section>
+   <section class="purpose-sec">
+      <h1 class="sectionTitle">PROPÓSITOS</h1>
+      <div class="purpose-area">
+          <div class="purpose">
+              <img src="../assets/images/about/happy.svg" alt="">
+              <div class="purpose-info">
+                  <h4 class="purpose-info-title">Realizar</h4>
+                  <p>Realizamos sonhos dos nossos clientes com exelência melhorando a vida de todos</p>
+              </div>
+          </div>
+          <div class="purpose">
+              <img src="../assets/images/about/harmony.svg" alt="">
+              <div class="purpose-info">
+                  <h4 class="purpose-info-title">Harmonia</h4>
+                  <p>Nos preocupamos em criar ambientes harmônicos com a natureza e reutilizar materiais descartados</p>
+              </div>
+          </div>
+          <div class="purpose">
+              <img src="../assets/images/about/evolution.svg" alt="">
+              <div class="purpose-info">
+                  <h4 class="purpose-info-title">Evoluir</h4>
+                  <p>Contribuimos com a evolução individual dos clientes e dos ambientes que criamos</p>
+              </div>
+          </div>
+      </div>
+  </section>
+  <footer>
+   <p>© 2024 ARQUITETURA ALPHA | <a href="LICENSE">Direitos autorais</a></p>
+   <p>Imagens usadas pertencem a <a href="https://orcadesignec.com/" target="_blank">Orca Design</a></p>
+</footer>
+   <script>
+      window.addEventListener('scroll', ()=>{
+         let header = document.querySelector('header');
+         header.classList.toggle('scrollHeader',window.scrollY > 200);
+      });
+   </script>
 </body>
 
 </html>

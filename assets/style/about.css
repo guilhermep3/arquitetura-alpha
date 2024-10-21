@@ -1,9 +1,25 @@
+@keyframes cores {
+   0% {
+       color: #af883a;
+   }
+   25% {
+       color: #ce9729;
+   }
+   50% {
+       color: #C99D45;
+   }
+   75% {
+       color: #ce9729;
+   }
+   100% {
+       color: #af883a;
+   }
+}
 .banner{
    background-image: url(../images/about/about-us-hero.jpg);
    background-position: top;
    background-size: cover;
    background-repeat: no-repeat;
-   width: 100vw;
    height: 100vh;
    display: flex;
    justify-content: center;
@@ -20,6 +36,148 @@
    margin-top: -150px;
 }
 .banner h2{
-   font-size: 30px;
+   font-size: 27px;
+   line-height: 30px;
    text-shadow: 1px 1px 5px #777;
+}
+
+.creator {
+   background: linear-gradient(90deg, #ccc, #f7f7f7, #e2cfa8, #f7f7f7, #ccc);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.creatorArea {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+}
+.creatorLeft {
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+   flex-direction: column;
+   flex: 1;
+   transition: 0.2s;
+}
+.creatorLeft:hover {
+   transform: scale(1.02);
+}
+.creatorLeft .creatorName {
+   font-size: 35px;
+   font-weight: 700;
+   text-shadow: 0px 0px 3px #000;
+   padding-bottom: 3px;
+   border-bottom: 1px solid #000;
+   cursor: pointer;
+   animation: cores 5s infinite;
+}
+.creatorLeft p {
+   font-size: 17px;
+   padding-top: 10px;
+}
+.creatorCenter {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   flex: 1;
+}
+.creatorCenter img {
+   width: 300px;
+   position: relative;
+}
+.creatorRight {
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   flex-direction: column;
+   flex: 1;
+}
+.creatorSkills {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 10px 0px;
+   border-left: 1px solid #999;
+   border-bottom: 1px solid #999;
+   border-radius: 10px;
+   padding: 5px;
+   transition: 0.2s;
+   cursor: pointer;
+}
+.creatorSkills:hover {
+   transform: scale(1.02);
+   transform: scaleX(1.03);
+}
+.creatorSkills i {
+   font-size: 25px;
+   margin-right: 5px;
+   color: var(--main-color);
+}
+.creatorMedia {
+   margin: 10px 0px;
+   border-radius: 10px;
+   transition: 0.2s;
+   cursor: pointer;
+}
+.creatorMedia i {
+   color: var(--main-color);
+   font-size: 22px;
+   border-bottom: 1px solid #999;
+   padding: 5px;
+   margin-right: 5px;
+}
+
+.purpose-sec {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding-bottom: 50px;
+}
+.purpose-area {
+   display: flex;
+   flex-direction: row;
+   gap: 30px;
+}
+.purpose {
+   display: flex;
+   border: 1px solid var(--main-color);
+   padding: 3px;
+   background-color: #f7f7f7;
+}
+.purpose img {
+   width: 180px;
+}
+.purpose-info {
+   width: 180px;
+   text-align: center;
+   padding: 3px;
+}
+.purpose-info-title {
+   font-size: 22px;
+   font-weight: 600;
+   margin-bottom: 20px;
+}
+.purpose-info p {
+   font-size: 15px;
+   line-height: 22px;
+}
+
+footer {
+   background-color: #555;
+   padding: 30px;
+}
+footer p {
+   color: #ccc;
+   font-size: 15px;
+}
+footer span {
+   cursor: pointer;
+}
+footer span:hover {
+   text-decoration: underline;
 }
