@@ -84,6 +84,9 @@ qs('.closeModal').addEventListener('click', ()=>{
    qs('.modalArea').classList.remove('showModal');
    qs('header').classList.remove('hideHeader');
 })
+qs('.modalArea').addEventListener('click', ()=>{
+   qs('.modalArea').classList.remove('showModal');
+})
 function renderColors(project){
    let modalColors = qs('.modalColors');
    modalColors.innerHTML = '';
@@ -112,18 +115,30 @@ function renderImages(project){
       });
    });
 }
-
+qsa('.projectInfo').forEach(evt => {
+   evt.addEventListener('mouseover',()=>{
+      evt.style.opacity = 1;
+      evt.addEventListener('mouseout', ()=>{
+         evt.style.opacity = 0;
+      })
+   })
+});
 // ECONOMIZE
 const m2 = qs('#m2');
 const calculate = qs('#calculate');
 const resultCalc = qs('#resultCalc');
 calculate.addEventListener('click', ()=>{
-   let valorM2 = m2.value * 8000;
+   let valorM2 = 0;
+   if(m2.value <= 500){
+      valorM2 = m2.value * 8000;
+   } else {
+      valorM2 = m2.value * 15000
+   }
    let valorM2disc = valorM2 * 0.90
    let valorM2fix = valorM2.toLocaleString('pt-BR');
    let valorM2discfix = valorM2disc.toLocaleString('pt-BR')
 
-   resultCalc.innerHTML = `Com nosso 10% de desconto custaria em torno de <span>R$${valorM2discfix}</span> reais.<br/>sem nosso desconto seria <span>R$${valorM2fix}</span> reais.`;
+   resultCalc.innerHTML = `Com nosso 10% de desconto, custaria em torno de <span>R$${valorM2discfix}</span> reais.<br/>sem nosso desconto seria <span>R$${valorM2fix}</span> reais.`;
    m2.value = '';
 })
 

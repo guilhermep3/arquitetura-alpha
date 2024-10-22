@@ -1,12 +1,12 @@
 body{
-   background: linear-gradient(to right, #c4b089, #fff, #fff, #c4b089);
+   background: linear-gradient(to right, #e0d2b6, #fff, #fff, #e0d2b6);
 }
 .localsSecArea{
    display: flex;
    justify-content: center;
    align-items: center;
    flex-wrap: wrap;
-   gap: 30px;
+   gap: 20px;
    height: 100vh;
 }
 .local{
@@ -23,7 +23,7 @@ body{
    margin: 3px 0;
 }
 .local img{
-   width: 280px;
+   width: 285px;
 }
 .localInfo{
    display: flex;
@@ -33,4 +33,7 @@ body{
    font-size: 20px;
    margin-right: 3px;
    color: var(--main-color);
+}
+.localInfo p{
+   font-size: 17px;
 }

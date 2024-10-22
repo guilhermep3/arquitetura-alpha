@@ -103,15 +103,15 @@ header{
    top: 0;
    left: 0;
    width: 100%;
-   z-index: 1000;
-   transition: 0.3s;
+   z-index: 10;
+   transition: background-color 0.3s;
 }
 .scrollHeader{
    background-color: #fff;
    border-bottom: 1px solid var(--main-color);
 }
 .hideHeader{
-   display: none;
+   z-index: 0;
 }
 .logo{
    width: 50px;
