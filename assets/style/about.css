@@ -41,6 +41,54 @@
    text-shadow: 1px 1px 5px #777;
 }
 
+.experience{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+   gap: 30px;
+}
+.experienceLeft, .experienceRight{
+   flex: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.experienceLeft{
+   display: flex;
+   align-items: end;
+   max-width: 400px;
+}
+.experienceLeft img{
+   width: 400px;
+}
+.experienceRight{
+   align-items: start;
+   max-width: 400px;
+}
+.experienceRight p{
+   font-size: 15px;
+   line-height: 25px;
+   color: #333;
+}
+.detachExp{
+   margin-top: 10px;
+}
+.exp{
+   display: flex;
+   padding: 5px;
+}
+.exp i{
+   color: var(--main-color);
+}
+.exp p{
+   font-size: 17px;
+   font-weight: 600;
+   color: #000;
+   margin-left: 10px;
+}
+
 .creator {
    background: linear-gradient(90deg, #ccc, #f7f7f7, #e2cfa8, #f7f7f7, #ccc);
    display: flex;
