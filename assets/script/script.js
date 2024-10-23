@@ -1,7 +1,7 @@
 // SCROLL HEADER
 window.addEventListener('scroll', ()=>{
    let header = document.querySelector('header');
-   header.classList.toggle('scrollHeader',window.scrollY > 200);
+   header.classList.toggle('scrollHeader',window.scrollY > 1);
 });
 const qs = (el)=>document.querySelector(el);
 const qsa = (el)=>document.querySelectorAll(el);
@@ -84,8 +84,10 @@ qs('.closeModal').addEventListener('click', ()=>{
    qs('.modalArea').classList.remove('showModal');
    qs('header').classList.remove('hideHeader');
 })
-qs('.modalArea').addEventListener('click', ()=>{
-   qs('.modalArea').classList.remove('showModal');
+qs('.modalArea').addEventListener('click', (e)=>{
+   if(e.target === e.currentTarget){
+      qs('.modalArea').classList.remove('showModal');
+   }
 })
 function renderColors(project){
    let modalColors = qs('.modalColors');
