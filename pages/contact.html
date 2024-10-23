@@ -3,8 +3,8 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="../assets/style/contact.css">
    <link rel="stylesheet" href="../assets/style/global.css">
+   <link rel="stylesheet" href="../assets/style/contact.css">
    <link rel="stylesheet" href="../assets/style/responsive.css">
    <title>Contato | Arquitetura Alpha</title>
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -13,7 +13,7 @@
 </head>
 <body>
    <header>
-      <a href="index.html" class="logo"><img src="../assets/images/logo.png" alt="logo da empresa"></a>
+      <a href="../index.html" class="logo"><img src="../assets/images/logo.png" alt="logo da empresa"></a>
       <nav>
          <ul>
             <li><a href="../index.html">Home</a></li>
@@ -43,6 +43,10 @@
                      <input type="text" id="name" data-rules="required|min=2" placeholder="Nome completo">
                   </div>
                   <div class="input">
+                     <label for="email">Email</label>
+                     <input type="email" id="email" data-rules="required|email" placeholder="Seu email">
+                  </div>
+                  <div class="input">
                      <label for="number">Número</label>
                      <input type="number" id="number" data-rules="required|min=8" placeholder="Número de telefone">
                   </div>
@@ -60,55 +64,6 @@
       <p>© 2024 ARQUITETURA ALPHA | <a href="LICENSE">Direitos autorais</a></p>
       <p>Imagens usadas pertencem a <a href="https://orcadesignec.com/" target="_blank">Orca Design</a></p>
    </footer>
-   <script>
-      const qs = (el)=>document.querySelector(el);
-      const qsa = (el)=>document.querySelectorAll(el);
-      let validator = {
-   handleSubmit: (evt)=>{
-      evt.preventDefault();
-      let send = true;
-      let inputs = form.querySelectorAll('input');
-      for(let i=0; i<=0;i++){
-         let input = inputs[i];
-         let check = validator.checkInput(input);
-         if(check !== true){
-            send = false;
-            validator.showError(input, check);
-         }
-      }
-
-      if(send){
-         form.submit()
-      }
-   },
-   checkInput:(input)=>{
-      let rules = input.getAttribute('data-rules');
-      if(rules !== null){
-         rules = rules.split('|');
-         for(let k in rules){
-            let rDetails = rules[k].split('=');
-            switch(rDetails[0]){
-               case 'required':
-                  if(input.value == ''){
-                     return 'Este campo é obrigatório';
-                  }
-                  break;
-               case 'min':
-                  break;
-            }
-         }
-      }
-      return true
-   },
-   showError:(input, error)=>{
-      input.style.borderColor = 'red'
-      let errorEl = document.createElement('div');
-      errorEl.classList.add('error');
-      errorEl.innerHTML = error
-   }
-}
-let form = qs('.validator')
-form.addEventListener('submit', validator.handleSubmit)
-   </script>
+   <script src="../assets/script/validator.js"></script>
 </body>
 </html>

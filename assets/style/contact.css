@@ -3,7 +3,7 @@
    justify-content: center;
    align-items: center;
    height: 100vh;
-   background: linear-gradient(to top, #e2deca, #f0f0f0);
+   background: linear-gradient(to top, #e4dab9, #f0f0f0);
 }
 .contactArea{
    display: flex;
@@ -11,23 +11,24 @@
    align-items: center;
    max-width: 1500px;
    border: 3px solid var(--main-color);
+   padding: 5px;
 }
 .contactLeft img{
-   width: 500px;
+   width: 550px;
 }
 .contactLeft, .contactRight{
    flex: 1;
    background-color: #f0f0f0;
-   padding: 20px;
+   padding: 20px 20px;
 }
 form{
    width: 400px;
-   height: 330px;
+   height: 390px;
 }
 .input, .descArea{
    display: flex;
    flex-direction: column;
-   margin-bottom: 10px;
+   margin-bottom: 5px;
 }
 .input label{
    font-size: 15px;
@@ -38,7 +39,7 @@ input, textarea{
 }
 #desc{
    width: 100%;
-   height: 130px;
+   height: 100px;
 }
 .submit{
    padding: 10px 20px;
@@ -47,4 +48,13 @@ input, textarea{
    border: 1px solid #000;
    background-color: var(--main-color);
    cursor: pointer;
+}
+.contactNav{
+   color: var(--main-color);
+}
+.error{
+   font-size: 13px;
+   padding: 3px;
+   color: #fff;
+   background-color: #b50505;
 }
