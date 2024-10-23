@@ -1,5 +1,5 @@
 const qs = (el) => document.querySelector(el);
-      const qsa = (el) => document.querySelectorAll(el);
+const qsa = (el) => document.querySelectorAll(el);
       let validator = {
          handleSubmit: (evt) => {
             evt.preventDefault();
@@ -16,6 +16,7 @@ const qs = (el) => document.querySelector(el);
             }
 
             if (send) {
+               openModal();
                form.submit()
             }
          },
@@ -69,3 +70,20 @@ const qs = (el) => document.querySelector(el);
       }
       let form = qs('.validator')
       form.addEventListener('submit', validator.handleSubmit)
+
+function openModal(){
+   window.alert('Obrigado, enviaremos um email para você.')
+   qs('.modalNone').style.opacity = 1;
+   qs('.modalNone').style.display = 'flex';
+   setTimeout(() => {
+      qs('.modalNone').style.marginTop = 0;
+   }, 1000);
+   qs('.confirm').addEventListener('click', ()=>{
+      qs('.modalNone').style.opacity = 1;
+      qs('.modalNone').style.display = 'flex';
+      setTimeout(() => {
+         qs('.modalNone').style.opacity = 0;
+         qs('.modalNone').style.marginTop = '-150px';
+      }, 1000);
+   })
+}

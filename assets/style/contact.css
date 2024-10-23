@@ -58,3 +58,45 @@ input, textarea{
    color: #fff;
    background-color: #b50505;
 }
+
+.modalNone{
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   display: none;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   background-color: rgba(0, 0, 0, 0.3);
+   transition: 0.3s;
+   margin-top: -150px;
+}
+.modal{
+   padding: 25px;
+   border-radius: 15px;
+   border: 1px solid #000;
+   background-image: url(../images/goldenbg.jpg);
+   background-position: center;
+   background-size: cover;
+}
+.modal h1{
+   font-size: 25px;
+}
+.modal h2{
+   font-size: 20px;
+   margin-top: 7px;
+   margin-bottom: 15px;
+}
+.modal button{
+   padding: 10px 15px;
+   font-size: 18px;
+   text-transform: uppercase;
+   border: 1px solid #000;
+   cursor: pointer;
+   transition: 0.2s;
+}
+.confirm:hover{
+   background-color: var(--main-color);
+}
