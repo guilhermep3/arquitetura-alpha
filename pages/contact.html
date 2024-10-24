@@ -73,10 +73,14 @@
    </footer>
    <script src="../assets/script/validator.js"></script>
    <script>
-         window.addEventListener('scroll', ()=>{
+      window.addEventListener('scroll', ()=>{
          let header = document.querySelector('header');
          header.classList.toggle('scrollHeader',window.scrollY > 1);
       });
+      const qs = (el)=>document.querySelector(el);
+      qs('.mobileHeader').addEventListener('click', ()=>{
+         qs('.navMobile').classList.toggle('showNavMobile')
+      })
    </script>
 </body>
 </html>

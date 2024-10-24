@@ -48,7 +48,7 @@ personsJson.map((item, index)=>{
 });
 
 // PROJECTS.JSON
-projectsHomeJson.map((item, index)=>{
+projectsJson.map((item, index)=>{
    let projectModel = qs('.project').cloneNode(true);
 
    projectModel.setAttribute('data-key', index);
@@ -63,14 +63,14 @@ projectsHomeJson.map((item, index)=>{
 qsa('#btnShowModal').forEach(btn => {
    btn.addEventListener('click', (e)=>{
       let key = e.target.closest('.project').getAttribute('data-key');
-      qs('.modalLeft img').src = projectsHomeJson[key].img;
-      qs('.modalTitle').innerHTML = projectsHomeJson[key].name;
-      qs('.modalType').innerHTML = projectsHomeJson[key].type;
-      qs('.modalLocal').innerHTML = `<i class="bi bi-geo-alt"></i><span>LOCAL:</span> ${projectsHomeJson[key].local}`;
-      qs('.modalYear').innerHTML = `<i class="bi bi-calendar-check"></i><span>ANO:</span> ${projectsHomeJson[key].year}`;
-      qs('.modalSize').innerHTML = `<i class="bi bi-bounding-box"></i><span>TAMANHO:</span> ${projectsHomeJson[key].size}`;
-      renderColors(projectsHomeJson[key]);
-      renderImages(projectsHomeJson[key]);
+      qs('.modalLeft img').src = projectsJson[key].img;
+      qs('.modalTitle').innerHTML = projectsJson[key].name;
+      qs('.modalType').innerHTML = projectsJson[key].type;
+      qs('.modalLocal').innerHTML = `<i class="bi bi-geo-alt"></i><span>LOCAL:</span> ${projectsJson[key].local}`;
+      qs('.modalYear').innerHTML = `<i class="bi bi-calendar-check"></i><span>ANO:</span> ${projectsJson[key].year}`;
+      qs('.modalSize').innerHTML = `<i class="bi bi-bounding-box"></i><span>TAMANHO:</span> ${projectsJson[key].size}`;
+      renderColors(projectsJson[key]);
+      renderImages(projectsJson[key]);
 
       qs('.modalArea').classList.add('showModal');
       qs('.modalArea').style.opacity = '0';

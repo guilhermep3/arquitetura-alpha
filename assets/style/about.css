@@ -16,7 +16,7 @@
    }
 }
 .banner{
-   background-image: url(../images/about/about-us-hero.jpg);
+   background-image: url(../images/about/aboutbg.jpg);
    background-position: top;
    background-size: cover;
    background-repeat: no-repeat;
@@ -240,4 +240,68 @@ footer span {
 }
 footer span:hover {
    text-decoration: underline;
+}
+
+@media  screen and (max-width: 768px) {
+   .banner{
+      background-image: url(../images/about/aboutus-mobile.jpg);
+      height: 600px;
+   }
+   .experience{
+      flex-direction: column;
+      gap: 10px;
+   }
+   .experienceLeft{
+      justify-content: center;
+      align-items: center;
+      margin-left: -20px;
+   }
+   .experienceLeft img{
+      width: 200px;
+   }
+   .experienceLeft span{
+      top: -50px;
+      right: -20px;
+      padding: 15px 10px;
+      font-size: 15px;
+   }
+   .experienceLeft strong{
+      font-size: 18px;
+   }
+   .experienceRight{
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+   }
+   .experienceRight p{
+      line-height: 22px;
+   }
+   .creatorArea{
+      flex-direction: column;
+   }
+   .creatorLeft p{
+      text-align: center;
+   }
+   .creatorRight{
+      align-items: center;
+   }
+   .creatorSkills{
+      padding: 0;
+      margin: 5px 0;
+   }
+   .purpose-area{
+      flex-direction: column;
+      margin: 3px;
+   }
+   .purpose img {
+      width: 115px;
+   }
+   .purpose-info-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
+   .purpose-info p {
+      font-size: 14px;
+      line-height: 20px;
+  }
 }
