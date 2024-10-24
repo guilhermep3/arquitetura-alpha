@@ -1,22 +1,5 @@
-@keyframes cores {
-   0% {
-       color: #af883a;
-   }
-   25% {
-       color: #ce9729;
-   }
-   50% {
-       color: #C99D45;
-   }
-   75% {
-       color: #ce9729;
-   }
-   100% {
-       color: #af883a;
-   }
-}
 .banner{
-   background-image: url(../images/about/aboutbg.jpg);
+   background-image: url(../images/about/about-bg.jpg);
    background-position: top;
    background-size: cover;
    background-repeat: no-repeat;
@@ -66,10 +49,10 @@
    right: -30px;
    padding: 20px 15px;
    font-size: 18px;
-   background-color: var(--main-color);
+   animation: coresbg 5s infinite;
 }
 .experienceLeft strong{
-   font-size: 20px;
+   font-size: 22px;
 }
 .experienceLeft img{
    width: 400px;

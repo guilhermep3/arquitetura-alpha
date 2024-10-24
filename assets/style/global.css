@@ -9,6 +9,34 @@
 :root{
    --main-color: #C99D45;
 }
+@keyframes cores {
+   0% {
+      color: #d4aa56;
+   }
+   25% {
+      color: #ce9729;
+   }
+   50% {
+      color: #C99D45;
+   }
+   75% {
+      color: #ce9729;
+   }
+   100% {
+      color: #d4aa56;
+   }
+}
+@keyframes coresbg {
+   0% {
+      background: linear-gradient( #C99D45, #d4aa56);
+   }
+   50%{
+      background: linear-gradient( #d4aa56, #C99D45);
+   }
+   100% {
+      background: linear-gradient( #C99D45, #d4aa56);
+   }
+}
 ::-webkit-scrollbar{
    display: block;
    width: 10px;

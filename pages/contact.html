@@ -24,10 +24,10 @@
       <a href="pages/contact.html" class="contactNav active">Contato</a>
       <div class="mobileHeader"><i class="bi bi-list"></i></div>
       <div class="navMobile">
-         <li><a href="index.html">Home</a></li>
-         <li><a href="pages/about.html">Sobre</a></li>
-         <li><a href="pages/locals.html">Locais</a></li>
-         <li><a href="pages/contact.html" class="active">CONTATO</a></li>
+         <li><a href="../index.html">Home</a></li>
+         <li><a href="about.html">Sobre</a></li>
+         <li><a href="locals.html">Locais</a></li>
+         <li><a href="contact.html" class="active">CONTATO</a></li>
       </div>
    </header>
    <section class="contactSec">
@@ -77,7 +77,6 @@
          let header = document.querySelector('header');
          header.classList.toggle('scrollHeader',window.scrollY > 1);
       });
-      const qs = (el)=>document.querySelector(el);
       qs('.mobileHeader').addEventListener('click', ()=>{
          qs('.navMobile').classList.toggle('showNavMobile')
       })

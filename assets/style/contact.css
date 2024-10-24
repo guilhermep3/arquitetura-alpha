@@ -100,3 +100,26 @@ input, textarea{
 .confirm:hover{
    background-color: var(--main-color);
 }
+@media screen and (max-width: 768px){
+   .contactArea{
+      flex-direction: column;
+      padding: 5px;
+   }
+   .contactLeft, .contactRight {
+      width: 300px;
+      align-items: center;
+   }
+   .contactLeft img {
+      width: 100%;
+   }
+   .input, .descArea{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+   }
+   .input input, #desc{
+      width: 300px;
+      align-items: center;
+   }
+}
