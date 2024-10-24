@@ -21,7 +21,7 @@
 .banner h2{
    font-size: 27px;
    line-height: 30px;
-   text-shadow: 1px 1px 5px #777;
+   text-shadow: 1px 1px 3px #777;
 }
 
 .experience{
@@ -227,8 +227,17 @@ footer span:hover {
 
 @media  screen and (max-width: 768px) {
    .banner{
-      background-image: url(../images/about/aboutus-mobile.jpg);
+      background-image: url(../images/about/about-bg-mobile.jpg);
       height: 600px;
+   }
+   .banner h1{
+      font-size: 30px;
+   }
+   .banner span{
+      font-size: 33px;
+   }
+   .banner h2{
+      font-size: 25px;
    }
    .experience{
       flex-direction: column;
@@ -237,7 +246,7 @@ footer span:hover {
    .experienceLeft{
       justify-content: center;
       align-items: center;
-      margin-left: -20px;
+      margin-left: -50px;
    }
    .experienceLeft img{
       width: 200px;

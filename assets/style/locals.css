@@ -42,11 +42,18 @@ body{
    .localsSecArea{
       padding-top: 100px;
       height: 100%;
+      margin-bottom: 20px;
+   }
+   .local{
+      padding: 5px;
    }
    .local img{
-      width: 170px;
+      width: 220px;
+   }
+   .localInfo{
+      margin-top: 5px;
    }
    .localInfo p{
-      font-size: 15px;
+      font-size: 17px;
    }
 }

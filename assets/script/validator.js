@@ -16,8 +16,19 @@ const qsa = (el) => document.querySelectorAll(el);
             }
 
             if (send) {
-               openModal();
-               form.submit()
+               evt.stopPropagation();
+               qs('.modalNone').style.opacity = 0;
+               qs('.modalNone').style.display = 'flex';
+               setTimeout(() => {
+                  qs('.modalNone').style.opacity = 1;
+               }, 100);
+               qs('.confirm').addEventListener('click', ()=>{
+                  qs('.modalNone').style.opacity = 0;
+                  setTimeout(() => {
+                     qs('.modalNone').style.display = 'none';
+                  }, 100);
+                  form.submit();
+               });
             }
          },
          checkInput: (input) => {
@@ -70,20 +81,3 @@ const qsa = (el) => document.querySelectorAll(el);
       }
       let form = qs('.validator')
       form.addEventListener('submit', validator.handleSubmit)
-
-function openModal(){
-   window.alert('Obrigado, enviaremos um email para você.')
-   qs('.modalNone').style.opacity = 1;
-   qs('.modalNone').style.display = 'flex';
-   setTimeout(() => {
-      qs('.modalNone').style.marginTop = 0;
-   }, 1000);
-   qs('.confirm').addEventListener('click', ()=>{
-      qs('.modalNone').style.opacity = 1;
-      qs('.modalNone').style.display = 'flex';
-      setTimeout(() => {
-         qs('.modalNone').style.opacity = 0;
-         qs('.modalNone').style.marginTop = '-150px';
-      }, 1000);
-   })
-}

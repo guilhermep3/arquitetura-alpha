@@ -38,11 +38,11 @@
       </h2>
    </section>
    <section class="experience">
-      <div class="experienceLeft">
+      <div class="experienceLeft scrollTop">
          <span><Strong>11 ANOS </Strong>DE<br/> EXPERIÊNCIA</span>
          <img src="../assets/images/about/aboutteam.jpeg" alt="">
       </div>
-      <div class="experienceRight">
+      <div class="experienceRight scrollBottom">
          <h2 class="sectionTitle">EXPERIÊNCIA</h2>
          <p>Desde 2010, trabalhamos para construir uma nova era na vida dos nossos clientes, transformando sonhos em realidade através de projetos arquitetônicos inovadores e sustentáveis. Nosso compromisso é oferecer soluções personalizadas que unem estética, funcionalidade e respeito ao meio ambiente</p>
          <div class="detachExp">
@@ -64,14 +64,14 @@
    <section class="creator">
       <h2 class="sectionTitle">CRIADOR</h2>
       <div class="creatorArea">
-         <div class="creatorLeft">
+         <div class="creatorLeft scrollTop">
             <p class="creatorName">Santiago Ortega</p>
             <p>CEO - Arquitetura Alpha</p>
          </div>
-         <div class="creatorCenter">
+         <div class="creatorCenter scrollBottom">
             <img src="../assets/images/about/creator.png" alt="">
          </div>
-         <div class="creatorRight">
+         <div class="creatorRight scrollTop">
             <div class="creatorSkills">
                <i class="bi bi-globe"></i>
                <p>Reconhecido Mundialmente</p>
@@ -103,21 +103,21 @@
    <section class="purpose-sec">
       <h2 class="sectionTitle">PROPÓSITOS</h2>
       <div class="purpose-area">
-          <div class="purpose">
+          <div class="purpose scrollBottom">
               <img src="../assets/images/about/happy.svg" alt="">
               <div class="purpose-info">
                   <h4 class="purpose-info-title">Realizar</h4>
                   <p>Realizamos sonhos dos nossos clientes com exelência melhorando a vida de todos</p>
               </div>
           </div>
-          <div class="purpose">
+          <div class="purpose scrollTop">
               <img src="../assets/images/about/harmony.svg" alt="">
               <div class="purpose-info">
                   <h4 class="purpose-info-title">Harmonia</h4>
                   <p>Nos preocupamos em criar ambientes harmônicos com a natureza e reutilizar materiais descartados</p>
               </div>
           </div>
-          <div class="purpose">
+          <div class="purpose scrollBottom">
               <img src="../assets/images/about/evolution.svg" alt="">
               <div class="purpose-info">
                   <h4 class="purpose-info-title">Evoluir</h4>
@@ -138,7 +138,18 @@
       const qs = (el)=>document.querySelector(el);
       qs('.mobileHeader').addEventListener('click', ()=>{
          qs('.navMobile').classList.toggle('showNavMobile')
-      })
+      });
+window.sr = ScrollReveal({reset:true})
+sr.reveal('.scrollTop',{
+   duration: '1000',
+   distance: '100px',
+   origin: 'top'
+})
+sr.reveal('.scrollBottom',{
+   duration: '1000',
+   distance: '100px',
+   origin: 'bottom'
+})
    </script>
 </body>
 </html>
