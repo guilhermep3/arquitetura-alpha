@@ -31,6 +31,8 @@
       </div>
    </header>
    <section class="contactSec">
+      <h1 class="sectionTitle">ENTRE EM CONTATO</h1>
+      <h2>Estamos prontos para realizar seu sonho</h2>
       <div class="contactArea">
          <div class="contactLeft">
             <img src="../assets/images/undraw-work.svg" alt="">
@@ -46,9 +48,17 @@
                      <label for="email">Email</label>
                      <input type="email" id="email" data-rules="required|email" placeholder="Seu email" autocomplete="off">
                   </div>
-                  <div class="input">
-                     <label for="number">Número</label>
-                     <input type="number" id="number" data-rules="required|min=9" placeholder="Número de telefone" autocomplete="off">
+                  <div class="inputNumber">
+                     <select id="select">
+                        <option value="brasil">Brasil +55</option>
+                        <option value="argentina">Argentina +54</option>
+                        <option value="colombia">Colômbia +57</option>
+                        <option value="equador">Equador +593</option>
+                     </select>
+                     <div class="input">
+                        <label for="number">Número</label>
+                        <input type="number" id="number" data-rules="required|number" placeholder="Número de telefone" autocomplete="off">
+                     </div>
                   </div>
                </div>
                <div class="descArea">

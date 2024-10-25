@@ -35,6 +35,7 @@ const qsa = (el) => document.querySelectorAll(el);
             let rules = input.getAttribute('data-rules');
             if (rules !== null) {
                rules = rules.split('|');
+               qs('.contactArea').style.paddingBottom = '30px'
                for (let k in rules) {
                   let rDetails = rules[k].split('=');
                   switch (rDetails[0]) {
@@ -54,6 +55,11 @@ const qsa = (el) => document.querySelectorAll(el);
                            if(!regex.test(input.value.toLowerCase())){
                               return 'Email não validado'
                            }
+                        }
+                        break;
+                     case 'number':
+                        if(input.value.length !== 9){
+                           return 'Número inserido não é valido'
                         }
                         break;
                   }

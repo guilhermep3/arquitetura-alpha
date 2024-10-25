@@ -2,11 +2,20 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   flex-direction: column;
    height: 100vh;
    background: url(../images/bg3.jpeg);
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
+   padding-top: 20px;
+}
+.contactSec h2{
+   font-size: 20px;
+   font-weight: 600;
+   margin-top: -20px;
+   margin-bottom: 20px;
+   text-align: center;
 }
 .contactArea{
    display: flex;
@@ -14,11 +23,12 @@
    align-items: center;
    max-width: 1500px;
    border: 3px solid var(--main-color);
-   background-color: #f0f0f0;
+   background-color: #fff;
    padding: 5px;
+   margin-bottom: 20px;
 }
 .contactLeft img{
-   width: 550px;
+   width: 600px;
 }
 .contactLeft, .contactRight{
    flex: 1;
@@ -28,17 +38,27 @@ form{
    width: 400px;
    height: 390px;
 }
-.input, .descArea{
+.input, .descArea, .inputNumber{
    display: flex;
    flex-direction: column;
    margin-bottom: 5px;
 }
-.input label{
-   font-size: 15px;
+.inputNumber{
+   flex-direction: row;
+   gap: 10px;
+   margin: 0 auto;
 }
-input, textarea{
+#number{
+   width: 100%;
+}
+.input label, .descArea label{
+   font-size: 17px;
+   font-weight: 600;
+}
+input, textarea, select{
    padding: 3px;
    font-size: 17px;
+   border-width: 0 0 1px 0;
 }
 #desc{
    width: 100%;
@@ -109,7 +129,12 @@ input, textarea{
 @media screen and (max-width: 768px){
    .contactArea{
       flex-direction: column;
+      width: 93vw;
       padding: 5px;
+   }
+   .contactSec{
+      padding-top: 100px;
+      margin-bottom: 80px;
    }
    .contactLeft, .contactRight {
       width: 300px;
@@ -118,14 +143,19 @@ input, textarea{
    .contactLeft img {
       width: 100%;
    }
-   .input, .descArea{
+   .input, .descArea, .inputNumber{
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 10px;
    }
-   .input input, #desc{
-      width: 300px;
+   #select{
+      font-size: 15px;
+      width: 50%;
+   }
+   .input input, #desc, .inputNumber{
+      width: 90vw;
       align-items: center;
+      max-height: 70px;
    }
 }
