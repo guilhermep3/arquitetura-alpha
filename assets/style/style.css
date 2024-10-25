@@ -126,7 +126,10 @@
 
 /* HIGHLIGHTS */
 .highlights{
-   background-color: #fff;
+   background: url(../images/bg2.jpg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
 }
 .highlightsArea{
    flex-direction: column;
@@ -168,10 +171,7 @@
 
 
 .ourProjects{
-   background: url(../images/bg2.jpg);
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
+   background: #fff;
 }
 .projects{
    display: flex;
