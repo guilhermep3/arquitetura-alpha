@@ -3,7 +3,10 @@
    justify-content: center;
    align-items: center;
    height: 100vh;
-   background: linear-gradient(to top, #e4dab9, #f0f0f0);
+   background: url(../images/bg3.jpeg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
 }
 .contactArea{
    display: flex;
@@ -11,6 +14,7 @@
    align-items: center;
    max-width: 1500px;
    border: 3px solid var(--main-color);
+   background-color: #f0f0f0;
    padding: 5px;
 }
 .contactLeft img{
@@ -18,7 +22,6 @@
 }
 .contactLeft, .contactRight{
    flex: 1;
-   background-color: #f0f0f0;
    padding: 20px 20px;
 }
 form{

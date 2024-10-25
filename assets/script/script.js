@@ -132,9 +132,11 @@ const resultCalc = qs('#resultCalc');
 calculate.addEventListener('click', ()=>{
    let valorM2 = 0;
    if(m2.value <= 500){
-      valorM2 = m2.value * 8000;
+      valorM2 = m2.value * 10000;
+   } else if (m2.value <= 1000){
+      valorM2 = m2.value * 20000
    } else {
-      valorM2 = m2.value * 15000
+      valorM2 = m2.value * 25000
    }
    let valorM2disc = valorM2 * 0.90
    let valorM2fix = valorM2.toLocaleString('pt-BR');
