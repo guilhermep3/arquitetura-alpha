@@ -30,7 +30,7 @@
 }
 .local-info h1{
    margin-bottom: 50px;
-   font-size: 50px;
+   font-size: 60px;
    font-weight: 800;
    -webkit-text-stroke-width: 1px;
    -webkit-text-stroke-color: #000;
@@ -54,16 +54,24 @@
 .local-img img{
    height: 80%;
 }
+
 @media screen and (max-width: 768px){
+   .localBrasil{
+      margin-top: 62px;
+   }
    .localBrasil, .localEquador, .localColombia, .localArgentina{
       flex-direction: column;
-      padding: 70px;
+      padding: 50px;
       height: 400px;
       text-align: center;
+      border-bottom: 5px solid var(--main-color);
+   }
+   .local-info{
+      gap: 5px;
    }
    .local-info h1{
-      font-size: 30px;
-      margin-bottom: 10px;
+      font-size: 33px;
+      margin-bottom: 7px;
    }
    .local-info p{
       font-size: 14px;
@@ -75,6 +83,6 @@
       align-items: center;
    }
    .local-img img{
-      height: 90%;
+      height: 95%;
    }
 }
