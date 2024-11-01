@@ -1,60 +1,46 @@
-.localsSecArea{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-wrap: wrap;
-   gap: 20px;
-   height: 100vh;
-   background: url(../images/bg3.jpeg);
+.localBrasil{
+   background: url(../images/locals/flags/brazil-bg.png);
+
+}
+.localBrasil, .localEquador{
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
-}
-.local{
    display: flex;
    justify-content: center;
    align-items: center;
-   flex-direction: column;
-   padding: 3px;
-   border: 1px solid var(--main-color);
-   background-color: #fff;
+   padding: 0 100px;
+   height: 700px;
+   color: #fff;
 }
-.local h3{
-   font-size: 22px;
-   text-transform: uppercase;
-   margin: 3px 0;
-}
-.local img{
-   width: 285px;
-}
-.localInfo{
+.local-info{
+   flex: 1;
    display: flex;
-   margin: 3px 0;
+   flex-direction: column;
+   gap: 20px;
 }
-.localInfo i{
-   font-size: 20px;
-   margin-right: 3px;
+.local-info h1{
+   margin-bottom: 50px;
+   font-size: 45px;
    color: var(--main-color);
 }
-.localInfo p{
-   font-size: 17px;
+.local-info p{
+   font-size: 20px;
+}
+.local-info i{
+   color: var(--main-color);
+   margin-right: 10px;
+}
+.local-img{
+   flex: 1;
+   display: flex;
+   justify-content: end;
+   align-items: end;
+   height: 100%;
+}
+.local-img img{
+   width: 350px;
 }
 @media screen and (max-width: 768px){
-   .localsSecArea{
-      padding-top: 100px;
-      height: 100%;
-      margin-bottom: 20px;
-   }
-   .local{
-      padding: 5px;
-   }
-   .local img{
-      width: 220px;
-   }
-   .localInfo{
-      margin-top: 5px;
-   }
-   .localInfo p{
-      font-size: 17px;
-   }
+
 }
