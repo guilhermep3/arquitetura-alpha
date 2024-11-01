@@ -32,28 +32,48 @@
    </header>
    <section class="localsSec">
       <div class="localBrasil">
-         <div class="local-info">
+         <div class="local-info scrollLeft">
             <h1>BRASIL</h1>
             <p><i class="bi bi-telephone-fill"></i>+55 987654321</p>
             <p><i class="bi bi-envelope-fill"></i>arqalphabrasil@gmail.com</p>
          </div>
          <div class="local-img">
-            <img src="../assets/images/locals/arquiteto-brasil.png" alt="">
+            <img class="scrollRight" src="../assets/images/locals/arquiteto-brasil.png" alt="arquiteto brasil">
          </div>
       </div>
       <div class="localEquador">
-         <div class="local-info">
+         <div class="local-info scrollLeft">
             <h1>EQUADOR</h1>
             <p><i class="bi bi-telephone-fill"></i>+593 987654321</p>
             <p><i class="bi bi-envelope-fill"></i>arqalphaequador@gmail.com</p>
          </div>
          <div class="local-img">
-            <img src="../assets/images/locals/arquiteto-equador.png" alt="">
+            <img class="scrollRight" src="../assets/images/locals/arquiteto-equador.png" alt="arquiteto equador">
+         </div>
+      </div>
+      <div class="localColombia">
+         <div class="local-info scrollLeft">
+            <h1>COLOMBIA</h1>
+            <p><i class="bi bi-telephone-fill"></i>+593 987654321</p>
+            <p><i class="bi bi-envelope-fill"></i>arqalphacolombia@gmail.com</p>
+         </div>
+         <div class="local-img">
+            <img class="scrollRight" src="../assets/images/locals/arquiteto-colombia.png" alt="arquiteto colombia">
+         </div>
+      </div>
+            <div class="localArgentina">
+         <div class="local-info scrollLeft">
+            <h1>ARGENTINA</h1>
+            <p><i class="bi bi-telephone-fill"></i>+593 987654321</p>
+            <p><i class="bi bi-envelope-fill"></i>arqalphaargentina@gmail.com</p>
+         </div>
+         <div class="local-img">
+            <img class="scrollRight" src="../assets/images/locals/arquiteto-argentina.png" alt="arquiteto argentina">
          </div>
       </div>
    </section>
    <footer>
-      <p>© 2024 ARQUITETURA ALPHA | <a href="LICENSE">Direitos autorais</a></p>
+      <p>© 2024 ARQUITETURA ALPHA | Guilherme Pereira | Todos os <a href="../LICENSE">Direitos autorais</a> reservados</p>
       <p>Imagens usadas pertencem a <a href="https://orcadesignec.com/" target="_blank">Orca Design</a></p>
    </footer>
    <script>
@@ -64,6 +84,17 @@
       const qs = (el)=>document.querySelector(el);
       qs('.mobileHeader').addEventListener('click', ()=>{
          qs('.navMobile').classList.toggle('showNavMobile')
+      });
+      window.sr = ScrollReveal({reset: true})
+      sr.reveal('.scrollLeft',{
+         duration: '1000',
+         distance: '100px',
+         origin: 'left'
+      })
+      sr.reveal('.scrollRight',{
+         duration: '1000',
+         distance: '100px',
+         origin: 'right'
       })
    </script>
 </body>

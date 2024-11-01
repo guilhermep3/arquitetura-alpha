@@ -1,16 +1,25 @@
 .localBrasil{
    background: url(../images/locals/flags/brazil-bg.png);
-
 }
-.localBrasil, .localEquador{
+.localEquador{
+   background: url(../images/locals/flags/equador-bg.jpg);
+}
+.localColombia{
+   background: url(../images/locals/flags/colombia-bg.jpg);
+}
+.localArgentina{
+   background: url(../images/locals/flags/argentina-bg.jpg);
+}
+.localBrasil, .localEquador, .localColombia, .localArgentina{
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
    display: flex;
    justify-content: center;
    align-items: center;
-   padding: 0 100px;
+   padding: 0 220px;
    height: 700px;
+   border-bottom: 10px solid var(--main-color);
    color: #fff;
 }
 .local-info{
@@ -21,13 +30,17 @@
 }
 .local-info h1{
    margin-bottom: 50px;
-   font-size: 45px;
+   font-size: 50px;
+   font-weight: 800;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #000;
    color: var(--main-color);
 }
 .local-info p{
    font-size: 20px;
 }
 .local-info i{
+   font-size: 22px;
    color: var(--main-color);
    margin-right: 10px;
 }
@@ -39,8 +52,29 @@
    height: 100%;
 }
 .local-img img{
-   width: 350px;
+   height: 80%;
 }
 @media screen and (max-width: 768px){
-
+   .localBrasil, .localEquador, .localColombia, .localArgentina{
+      flex-direction: column;
+      padding: 70px;
+      height: 400px;
+      text-align: center;
+   }
+   .local-info h1{
+      font-size: 30px;
+      margin-bottom: 10px;
+   }
+   .local-info p{
+      font-size: 14px;
+   }
+   .local-info i{
+      font-size: 15px;
+   }
+   .local-img{
+      align-items: center;
+   }
+   .local-img img{
+      height: 90%;
+   }
 }

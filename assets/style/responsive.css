@@ -28,6 +28,13 @@
    .sliderTitle img{
       width: 30px;
    }
+   .aboutUs, .highlights{
+      background: url(../images/bg2-mobile.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+   }
    .aboutUs-area{
       flex-direction: column-reverse;
    }
