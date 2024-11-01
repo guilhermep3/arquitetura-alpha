@@ -54,6 +54,7 @@
 .local-img img{
    height: 80%;
 }
+
 @media screen and (max-width: 768px){
    .localBrasil{
       margin-top: 62px;
