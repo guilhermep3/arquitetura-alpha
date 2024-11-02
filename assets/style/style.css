@@ -120,6 +120,7 @@
    padding: 0 5px;
    border-left: 1px solid var(--main-color);
    border-right: 1px solid var(--main-color);
+   margin-bottom: 5px;
 }
 .personLoad{
    color: #333;
@@ -361,21 +362,47 @@
    margin-bottom: 20px;
    font-weight: 500;
 }
-.btnContact{
-   display: block;
-   font-size: 20px;
-   padding: 15px 20px;
-   border-radius: 7px;
-   border: 1px solid #333;
-   color: #000;
-   text-decoration: none;
-   background-color: var(--main-color);
-   box-shadow: 1px 1px 3px rgba(51, 51, 51, 0.5);
+.btnContact {
+   width: 160px;
+   height: 60px;
+   border: none;
+   border-radius: 10px;
+   background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+   background-size: 250%;
+   background-position: left;
+   color: #ffd277;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
    cursor: pointer;
-   transition: 0.2s;
+   transition-duration: 1s;
+   overflow: hidden;
+ }
+.btnContact::before {
+   position: absolute;
+   content: "SUBSCRIBE";
+   color: #ffd277;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 97%;
+   height: 90%;
+   border-radius: 8px;
+   transition-duration: 1s;
+   background-color: rgba(0, 0, 0, 0.842);
+   background-size: 200%;
 }
-.btnContact:hover{
-   animation: btn-animation 1s ease;
+.btnContact:hover {
+   background-position: right;
+   transition-duration: 1s;
+}
+.btnContact:hover::before {
+   background-position: right;
+   transition-duration: 1s;
+}
+.btnContact:active {
+   transform: scale(0.95);
 }
 .contactRight a{
    color: #000;
