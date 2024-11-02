@@ -367,10 +367,13 @@
    height: 60px;
    border: none;
    border-radius: 10px;
-   background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+   background: linear-gradient(to right,#77530a,#C99D45,#77530a,#77530a,#C99D45,#77530a);
    background-size: 250%;
    background-position: left;
-   color: #ffd277;
+   color: #221806;
+   font-size: 20px;
+   font-weight: bold;
+   text-decoration: none;
    position: relative;
    display: flex;
    align-items: center;
@@ -381,8 +384,8 @@
  }
 .btnContact::before {
    position: absolute;
-   content: "SUBSCRIBE";
-   color: #ffd277;
+   content: "";
+   color: #000;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -390,7 +393,7 @@
    height: 90%;
    border-radius: 8px;
    transition-duration: 1s;
-   background-color: rgba(0, 0, 0, 0.842);
+   background-color: rgba(200, 200, 200, 0.3);
    background-size: 200%;
 }
 .btnContact:hover {
@@ -524,6 +527,7 @@
    border-radius: 10px;
    border: 1px solid #ccc;
    background-color: #e3e3e3;
+   cursor: pointer;
 }
 .closeModal:hover{
    border: 1px solid #777;
