@@ -367,7 +367,7 @@
    height: 60px;
    border: none;
    border-radius: 10px;
-   background: linear-gradient(to right,#77530a,#C99D45,#77530a,#77530a,#C99D45,#77530a);
+   background: linear-gradient(to right,#886217,#C99D45,#886217,#886217,#C99D45,#886217);
    background-size: 250%;
    background-position: left;
    color: #221806;
@@ -389,11 +389,11 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   width: 97%;
+   width: 96%;
    height: 90%;
    border-radius: 8px;
    transition-duration: 1s;
-   background-color: rgba(200, 200, 200, 0.3);
+   background-color: rgba(0, 0, 0, 0.1);
    background-size: 200%;
 }
 .btnContact:hover {
