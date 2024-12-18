@@ -50,7 +50,7 @@
    right: -30px;
    padding: 20px 15px;
    font-size: 18px;
-   animation: coresbg 5s infinite;
+   background: linear-gradient( #C99D45, #d4aa56);
 }
 .experienceLeft strong{
    font-size: 22px;

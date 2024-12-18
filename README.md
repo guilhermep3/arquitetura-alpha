@@ -7,4 +7,3 @@
 <img src="https://github.com/user-attachments/assets/a9c44951-f79e-426a-b456-476182cfe8d4"/>
 <p>Imagens pegas em <a href="https://orcadesignec.com" target="_blank">Orca Design</a></p>
 <p>Icones usados do <a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap</a></p>
-<p>Efeito de scroll <a href="https://scrollrevealjs.org/" target="_blank">ScrollReveal</a></p>
